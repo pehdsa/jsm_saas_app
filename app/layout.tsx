@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Converso",
   description: "Real-time AI Teaching Platform",
 };
+import { ClerkProvider } from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -19,10 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${bricolage.variable} antialiased bg-accent`}>
-        <Header />
-        {children}
+    <html lang="pt-BR">
+      <body className={`${bricolage.variable} antialiased pb-20`}>
+        <ClerkProvider appearance={{ variables: { colorPrimary: "#fe5933" } }}>
+          <Header />
+          {children}
+        </ClerkProvider>
       </body>
     </html>
   );
