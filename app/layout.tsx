@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body className={`${bricolage.variable} antialiased pb-20`}>
         <ClerkProvider appearance={{ variables: { colorPrimary: "#fe5933" } }}>
           <Header />
