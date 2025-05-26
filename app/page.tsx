@@ -9,6 +9,8 @@ import {
 import { getSubjectColor } from "@/lib/utils";
 import React from "react";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   const companios = await getAllCompanions({ limit: 3 });
   const recentSessionsCompanions = await getRecentSessions(10);
