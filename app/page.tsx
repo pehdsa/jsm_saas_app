@@ -2,7 +2,6 @@ import { CompanionCard } from "@/components/CompanionCard";
 import { CompanionsList } from "@/components/CompanionsList";
 //@ts-ignore
 import { Cta } from "@/components/Cta";
-import { recentSessions } from "@/constants";
 import {
   getAllCompanions,
   getRecentSessions,

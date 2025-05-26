@@ -4,7 +4,7 @@ import React from "react";
 import { Navbar } from "./Navbar";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
-export const Header = () => {
+export const HeaderComponent = () => {
   return (
     <header className="flex items-center justify-between mx-auto w-full px-14 py-4 bg-white max-sm:px-4">
       <Link href="/">
